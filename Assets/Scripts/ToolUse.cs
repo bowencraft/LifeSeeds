@@ -9,25 +9,38 @@ public class ToolUse : MonoBehaviour
     public int mouseRatio = 1;
     public Vector3 cameraPos;
 
+    private Camera mainCamera;
+    [SerializeField] private Transform mouseVisualTransform;
+
     // Start is called before the first frame update
     void Start()
     {
+        mainCamera = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDragging)
-        {
-            transform.position = Camera.main.ScreenToViewportPoint(Input.mousePosition) * mouseRatio;
-            //Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = false;
-        }
-        else {
+        this.GetComponent<Rigidbody2D>().gravityScale = 0;
 
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+        if (Input.GetMouseButtonUp(1))
+        {
+            isDragging = false;
+            this.GetComponent<Rigidbody2D>().gravityScale = 1;
+            mouseVisualTransform.position = GetMouseWorldPosition();
         }
+        //if (isDragging)
+        //{
+        //    transform.position = Camera.main.ScreenToViewportPoint(Input.mousePosition) * mouseRatio;
+        //    //Cursor.lockState = CursorLockMode.Confined;
+        //    Cursor.visible = false;
+        //}
+        //else
+        //{
+
+        //    Cursor.lockState = CursorLockMode.None;
+        //    Cursor.visible = true;
+        //}
 
         cameraPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
@@ -47,5 +60,12 @@ public class ToolUse : MonoBehaviour
     {
         this.GetComponent<Rigidbody2D>().gravityScale = 1;
         isDragging = false;
+    }
+
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPosition.z = 0f;
+        return mouseWorldPosition;
     }
 }
