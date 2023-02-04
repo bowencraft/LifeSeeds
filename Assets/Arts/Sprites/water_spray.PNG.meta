@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6555efb59da2242e79676170344652a0
+guid: 0d2f1816094794590b3d68bca2bfdebc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 140
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,22 +117,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0993_0
+      name: IMG_0984_7
       rect:
         serializedVersion: 2
-        x: 496
-        y: 629
-        width: 292
-        height: 317
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 380
+        y: 757
+        width: 373
+        height: 632
+      alignment: 9
+      pivot: {x: 0.393484, y: 0.62572974}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06463493c451e4efc9c16931d9b12a0f
-      internalID: -892862659
+      spriteID: 3d4f13af4cd624a2bbfec83598ec8785
+      internalID: 591246069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_0984_10
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 766
+        width: 500
+        height: 635
+      alignment: 9
+      pivot: {x: 0.5529741, y: 0.61470765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9439b954b7374558ab234f10c16d5e9
+      internalID: -1816890866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_spray_0
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1587
+        width: 381
+        height: 636
+      alignment: 9
+      pivot: {x: 0.4217901, y: 0.62493896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aecd1ab13b124d2c8c422c48e1773b7
+      internalID: 1069211268
       vertices: []
       indices: 
       edges: []
@@ -148,7 +190,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IMG_0993_0: -892862659
+      IMG_0984_11: -1901516455
+      IMG_0984_1: 1625633318
+      IMG_0984_10: -1816890866
+      IMG_0984_8: -215254546
+      IMG_0984_12: -2123895411
+      IMG_0984_6: 668132675
+      IMG_0984_5: 1380386161
+      IMG_0984_13: 1845851857
+      IMG_0984_4: 495396810
+      IMG_0984_2: -1154695639
+      IMG_0984_7: 591246069
+      water_spray_0: 1069211268
+      IMG_0984_0: -1812732198
+      IMG_0984_9: 1189096448
+      IMG_0984_14: 1286536671
+      IMG_0984_15: -807006873
+      IMG_0984_3: -1040417214
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
