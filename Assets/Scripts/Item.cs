@@ -14,4 +14,16 @@ public class Item {
 
     public ItemType itemType;
     public int amount;
+
+    public Sprite GetSprite()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.LesbianSeed:     return SeedAssets.Instance.LesbianSeedSprite;
+            case ItemType.RoseSeed:        return SeedAssets.Instance.RoseSeedSprite;
+            case ItemType.PeonySeed:       return SeedAssets.Instance.PeonySeedSprite;
+            case ItemType.SnakeBeautySeed: return SeedAssets.Instance.SnakeBeautySeedSprite;
+        }
+    }
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class UI_Inventory : MonoBehaviour
 {
@@ -29,7 +31,14 @@ public class UI_Inventory : MonoBehaviour
         {
             RectTransform seedSlotRectTransform = Instantiate(seedSlotTemplate, seedSlotContainer).GetComponent<RectTransform>();
             seedSlotRectTransform.gameObject.SetActive(true);
+
             seedSlotRectTransform.anchoredPosition = new Vector2(x * seedSlotCellSize, y * seedSlotCellSize);
+            Image image = seedSlotRectTransform.Find("Image").GetComponent<Image>();
+            image.sprite = item.GetSprite();
+
+            TextMeshProUGUI uiText = seedSlotRectTransform.Find("text").GetComponent<TextMeshProUGUI>();
+            uiText.SetText(item.amount.ToString());
+
             x++;
             if (x > 1)
             {

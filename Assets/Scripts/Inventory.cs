@@ -10,11 +10,10 @@ public class Inventory
     {
         itemList = new List<Item>();
 
-        AddItem(new Item { itemType = Item.ItemType.RoseSeed, amount = 0 });
-        AddItem(new Item { itemType = Item.ItemType.SnakeBeautySeed, amount = 0 });
-        AddItem(new Item { itemType = Item.ItemType.PeonySeed, amount = 0 });
-        AddItem(new Item { itemType = Item.ItemType.LesbianSeed, amount = 0 });
-        AddItemAmount(new Item { itemType = Item.ItemType.LesbianSeed, amount = 0 });
+        AddItem(new Item { itemType = Item.ItemType.RoseSeed, amount = 1 });
+        AddItem(new Item { itemType = Item.ItemType.SnakeBeautySeed, amount = 1 });
+        AddItem(new Item { itemType = Item.ItemType.PeonySeed, amount = 1 });
+        AddItem(new Item { itemType = Item.ItemType.LesbianSeed, amount = 1 });
         Debug.Log(itemList.Count);
     }
 
