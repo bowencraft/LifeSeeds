@@ -10,13 +10,14 @@ public class UI_Inventory : MonoBehaviour
 
     private void Awake()
     {
-        seedSlotContainer = transform.Find("seeSlotContainer");
-        seedSlotTemplate = seedSlotContainer.Find("seeSlotTemplate");
+        seedSlotContainer = transform.Find("seedSlotContainer");
+        seedSlotTemplate = seedSlotContainer.Find("seedSlotTemplate");
     }
 
     public void SetInventory(Inventory inventory)
     {
         this.inventory = inventory;
+        RefreshInventoryItems();
     }
 
     private void RefreshInventoryItems()
@@ -30,10 +31,10 @@ public class UI_Inventory : MonoBehaviour
             seedSlotRectTransform.gameObject.SetActive(true);
             seedSlotRectTransform.anchoredPosition = new Vector2(x * seedSlotCellSize, y * seedSlotCellSize);
             x++;
-            if (x > 4)
+            if (x > 1)
             {
                 x = 0;
-                y++;
+                y--;
             }
         }
     }
