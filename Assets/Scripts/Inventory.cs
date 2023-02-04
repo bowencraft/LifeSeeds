@@ -14,20 +14,21 @@ public class Inventory
         AddItem(new Item { itemType = Item.ItemType.SnakeBeautySeed, amount = 0 });
         AddItem(new Item { itemType = Item.ItemType.PeonySeed, amount = 0 });
         AddItem(new Item { itemType = Item.ItemType.LesbianSeed, amount = 0 });
+        AddItemAmount(new Item { itemType = Item.ItemType.LesbianSeed, amount = 0 });
         Debug.Log(itemList.Count);
     }
 
     public void AddItem(Item item)
     {
-        //bool itemAlreadyInInventory = false;
-        //foreach (Item inventoryItem in itemList)
-        //{
-        //    inventoryItem.amount += item.amount;
-        //    itemAlreadyInInventory = true;
-        //}
-        //if (!itemAlreadyInInventory) {
             itemList.Add(item);
-        //}
+    }
+
+    public void AddItemAmount(Item item)
+    {
+        foreach (Item inventoryItem in itemList)
+        {
+            inventoryItem.amount += item.amount;
+        }
     }
 
     public List<Item> GetItemList()
