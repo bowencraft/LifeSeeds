@@ -64,5 +64,20 @@ public class RootGamePlayerMovement : MonoBehaviour
         {
             vSpeed *= Friction;
         }
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "PlayerWalls")
+        {
+            Debug.Log("Hit wall");
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "GoalTrigger1")
+        {
+            Debug.Log("Hit goal");
+        }
     }
 }
