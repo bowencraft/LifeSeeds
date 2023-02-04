@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fdae49a8dc1fb4dc89e4f93302f9305a
+guid: 6b228a1f30f6d491fb7ee294dd6810fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,362 +113,386 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rosea_tilesheet_0
+      name: IMG_0998 2_2
       rect:
         serializedVersion: 2
-        x: 610
-        y: 2177
-        width: 115
-        height: 220
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1420
+        y: 2420
+        width: 223
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83edfa873ad9c4aa9a8c592538c62819
-      internalID: -1442765411
+      spriteID: d8d4751830b3745699001f5fbe4d5b61
+      internalID: -719078764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_1
+      name: IMG_0998 2_4
       rect:
         serializedVersion: 2
-        x: 869
-        y: 2160
-        width: 215
-        height: 371
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 396
+        y: 2424
+        width: 153
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09ae550f715e54ba6a02464d697ed8ec
-      internalID: -17565553
+      spriteID: 36dbffc38509e4f058431adb9f3e6318
+      internalID: -606542937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_2
+      name: IMG_0998 2_5
       rect:
         serializedVersion: 2
-        x: 889
-        y: 2234
-        width: 6
-        height: 5
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 742
+        y: 2422
+        width: 190
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e1fa6d88434441ad942d3dc170c186d
-      internalID: 475385224
+      spriteID: 9a64619d5d6694c43a99304fea091113
+      internalID: 1696197417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_3
+      name: IMG_0998 2_6
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 2161
-        width: 325
-        height: 462
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1010
+        y: 2419
+        width: 205
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39f2d8ebd13f4cc98a3fd8ed80f33f5
-      internalID: -434499555
+      spriteID: a1bd010dea16d484396f822c9d6af188
+      internalID: -1007940726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_4
+      name: IMG_0998 2_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1665
-        width: 126
-        height: 165
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 152
+        y: 1962
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 364672c6e07f749e59a98b77b1d883ed
-      internalID: -648172933
+      spriteID: 926b9892c30d64bf3978cd22c660ea27
+      internalID: 135459234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_7
+      name: IMG_0998 2_9
       rect:
         serializedVersion: 2
-        x: 282
-        y: 1650
-        width: 127
-        height: 182
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 358
+        y: 1888
+        width: 177
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5f87aca854348ea88c6586c3c51eb5
-      internalID: -1528561498
+      spriteID: 9e3173b6d0d6249a7ad2ed251d6b9bc7
+      internalID: -188124414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_10
+      name: IMG_0998 2_10
       rect:
         serializedVersion: 2
-        x: 614
-        y: 1691
-        width: 106
-        height: 159
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 674
+        y: 1793
+        width: 176
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75725a746c15a469eb5b5f96e0e0ffa0
-      internalID: -1485695355
+      spriteID: 5b047ff0a0608404785e8e918047805c
+      internalID: 472686608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_11
+      name: IMG_0998 2_11
       rect:
         serializedVersion: 2
-        x: 921
-        y: 1623
-        width: 132
-        height: 231
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 919
+        y: 1793
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16f8a857db38845dba9fc43c87466966
-      internalID: -1046364153
+      spriteID: 6ab91be27c68e4614b8753a7c97bdab8
+      internalID: 2080432689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_12
+      name: IMG_0998 2_13
       rect:
         serializedVersion: 2
-        x: 1267
-        y: 1553
-        width: 309
-        height: 303
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 1385
+        y: 1793
+        width: 331
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c51622d2982b46c1980daeb03490222
-      internalID: -1630849756
+      spriteID: 7f8af63ab527e4c17b92888b74d275fd
+      internalID: 1319099324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_14
+      name: IMG_0998 2_30
       rect:
         serializedVersion: 2
-        x: 619
-        y: 1085
-        width: 171
-        height: 144
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1036
+        y: 1236
+        width: 142
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82fa5b6bdfe0d471185420c7662c94c8
-      internalID: 1371131606
+      spriteID: 57478f8e9f739490491630f6f97f233f
+      internalID: 1269203667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_15
+      name: IMG_0998 2_33
       rect:
         serializedVersion: 2
-        x: 900
-        y: 1080
-        width: 230
-        height: 200
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 745
+        y: 1241
+        width: 99
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7c1587e2fd241ceb77d21dac97d46d
-      internalID: -1024265971
+      spriteID: b616269b6ad804de3ac44ffc7d30f227
+      internalID: -1610640567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_16
+      name: IMG_0998 2_36
       rect:
         serializedVersion: 2
-        x: 622
-        y: 719
-        width: 111
-        height: 160
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 606
+        y: 837
+        width: 292
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043d71b65c53544fba8e135f7252c387
-      internalID: -569390395
+      spriteID: bfae336870505478caeddc8882f0bd13
+      internalID: -418322740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_17
+      name: IMG_0998 2_37
       rect:
         serializedVersion: 2
-        x: 898
-        y: 722
-        width: 210
-        height: 165
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 960
+        y: 819
+        width: 289
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b5d8d22cd13b42ab8d7d729a87bf39c
-      internalID: -292240880
+      spriteID: 9a1ea8aea47424c83852cd7f13c111e4
+      internalID: -1959874399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_18
+      name: IMG_0998 2_45
       rect:
         serializedVersion: 2
-        x: 604
-        y: 355
-        width: 160
-        height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1030
+        y: 489
+        width: 143
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca5f50d454bce4c03a547bc8c68a56b7
-      internalID: -557305182
+      spriteID: cc993cff60fa54c33b64f257d108f8a9
+      internalID: 592752176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_19
+      name: IMG_0998 2_47
       rect:
         serializedVersion: 2
-        x: 926
-        y: 341
-        width: 188
-        height: 208
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 745
+        y: 490
+        width: 105
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5daec371a6116459693d0b6fe0aa0ee6
-      internalID: -1409200549
+      spriteID: 833dba82101684fe3b289124de3f86d9
+      internalID: -281855405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_20
+      name: IMG_0998 2_52
       rect:
         serializedVersion: 2
-        x: 628
-        y: 0
-        width: 115
-        height: 163
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 704
+        y: 99
+        width: 212
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58436dbc3792043faa445a2fc8e4756d
-      internalID: 949516076
+      spriteID: 82df74162313343a29abd7ee3d6e7db0
+      internalID: -755397837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rosea_tilesheet_21
+      name: IMG_0998 2_54
       rect:
         serializedVersion: 2
-        x: 908
-        y: 0
-        width: 219
-        height: 170
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 960
+        y: 108
+        width: 332
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb7b135ce0c4741b48b9f8758afecec8
-      internalID: -927330508
+      spriteID: 927854d7507214fe6a691008078e98a3
+      internalID: -1959986418
       vertices: []
       indices: 
       edges: []
@@ -484,28 +508,67 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rosea_tilesheet_0: -1442765411
-      rosea_tilesheet_6: -538803604
-      rosea_tilesheet_16: -569390395
-      rosea_tilesheet_9: 878122104
-      rosea_tilesheet_21: -927330508
-      rosea_tilesheet_19: -1409200549
-      rosea_tilesheet_8: 1335138335
-      rosea_tilesheet_13: -942011419
-      rosea_tilesheet_15: -1024265971
-      rosea_tilesheet_18: -557305182
-      rosea_tilesheet_1: -17565553
-      rosea_tilesheet_3: -434499555
-      rosea_tilesheet_12: -1630849756
-      rosea_tilesheet_2: 475385224
-      rosea_tilesheet_10: -1485695355
-      rosea_tilesheet_11: -1046364153
-      rosea_tilesheet_7: -1528561498
-      rosea_tilesheet_20: 949516076
-      rosea_tilesheet_14: 1371131606
-      rosea_tilesheet_4: -648172933
-      rosea_tilesheet_5: -1124838514
-      rosea_tilesheet_17: -292240880
+      IMG_0998 2_11: 2080432689
+      IMG_0998 2_35: 1988342933
+      IMG_0998 2_19: 1690279266
+      IMG_0998 2_21: -1101407957
+      IMG_0998 2_24: -804831564
+      IMG_0998 2_37: -1959874399
+      IMG_0998 2_34: -394663075
+      IMG_0998 2_60: 211107433
+      IMG_0998 2_15: 1480779878
+      IMG_0998 2_1: -78709829
+      IMG_0998 2_52: -755397837
+      IMG_0998 2_26: 850341416
+      IMG_0998 2_39: 1371557534
+      IMG_0998 2_9: -188124414
+      IMG_0998 2_33: -1610640567
+      IMG_0998 2_46: 2007537320
+      IMG_0998 2_47: -281855405
+      IMG_0998 2_28: 1087611327
+      IMG_0998 2_41: -380493048
+      IMG_0998 2_20: -1146882425
+      IMG_0998 2_50: 1303926738
+      IMG_0998 2_58: 887046437
+      IMG_0998 2_0: 1228988902
+      IMG_0998 2_31: -115977289
+      IMG_0998 2_10: 472686608
+      IMG_0998 2_27: 702519847
+      IMG_0998 2_49: 1193290114
+      IMG_0998 2_2: -719078764
+      IMG_0998 2_4: -606542937
+      IMG_0998 2_16: 924916281
+      IMG_0998 2_5: 1696197417
+      IMG_0998 2_18: 588953143
+      IMG_0998 2_57: 60830312
+      IMG_0998 2_43: 1396903274
+      IMG_0998 2_3: -1275321274
+      IMG_0998 2_14: -325299459
+      IMG_0998 2_7: 139905225
+      IMG_0998 2_42: 954203545
+      IMG_0998 2_44: -804483157
+      IMG_0998 2_40: 1376563020
+      IMG_0998 2_12: 1956495670
+      IMG_0998 2_25: -260173742
+      IMG_0998 2_22: -99870513
+      IMG_0998 2_29: -452019065
+      IMG_0998 2_55: 1108075318
+      IMG_0998 2_53: -355621110
+      IMG_0998 2_51: 1000481655
+      IMG_0998 2_32: 1738759956
+      IMG_0998 2_13: 1319099324
+      IMG_0998 2_38: 536912547
+      IMG_0998 2_48: -1599527020
+      IMG_0998 2_59: 659205333
+      IMG_0998 2_6: -1007940726
+      IMG_0998 2_56: -2027044636
+      IMG_0998 2_23: 1083518807
+      IMG_0998 2_54: -1959986418
+      IMG_0998 2_8: 135459234
+      IMG_0998 2_45: 592752176
+      IMG_0998 2_30: 1269203667
+      IMG_0998 2_17: 1424841130
+      IMG_0998 2_36: -418322740
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

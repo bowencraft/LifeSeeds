@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3dc5486cb406a47aa966fc5adf4ed993
+guid: 4764d81693ba942e0a18b9f4867f4a68
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,70 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: IMG_0980_0
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 1227
-        width: 494
-        height: 1087
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1259bdffd52db402fb019360f186eaf0
-      internalID: 1347575388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_0980_1
-      rect:
-        serializedVersion: 2
-        x: 860
-        y: 617
-        width: 495
-        height: 1098
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aee5e50d79bfd4b2b8b073778ac05a3b
-      internalID: -1260238310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_0980_2
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 0
-        width: 493
-        height: 1100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c737b09e8d439498183a01a0751059e7
-      internalID: -2110862442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -189,10 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      IMG_0980_1: -1260238310
-      IMG_0980_2: -2110862442
-      IMG_0980_0: 1347575388
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
