@@ -8,14 +8,16 @@ public class PlantHolderManager : MonoBehaviour
 
     private int PlantType = 0; // Plant sprites are decided by type, status and stage
     private int PlantStage = 0;
-    private int PlantStatus = 0; // 0 - growing, 1 - stop growing (event happens), 2 - mature, 3 - die
+    private int PlantStatus = 0; // 0 - growing, 1 - stop growing (event happens), 2 - mature, 3 - illness, 4 - die
     private int TimeRemainToNextStage = -1;
 
     PlantObjectProperty plantProperty = null;
+    SpriteRenderer p_SpriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        p_SpriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -34,7 +36,7 @@ public class PlantHolderManager : MonoBehaviour
                 {
                     PlantStage++;
                     TimeRemainToNextStage = plantProperty.getStageTime();
-                    this.GetComponent<SpriteRenderer>();
+                    p_SpriteRenderer.sprite = plantProperty.getSprite(0, PlantStage, 0);
                 }
                 else
                 {
@@ -45,7 +47,7 @@ public class PlantHolderManager : MonoBehaviour
             else { } // mature or die
 
         }
-
+        //GetComponent<SpriteRenderer>() = p_SpriteRenderer;
     }
 
     void addNewPlant(int type) {
