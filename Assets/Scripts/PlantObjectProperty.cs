@@ -40,14 +40,14 @@ public class PlantObjectProperty : MonoBehaviour
             if (stage == 2)
             {
                 if (status == 0) return stem_2_default;
-                else if (status == 3) return stem_2_illness;
-                else if (status == 4) return stem_2_died;
+                else if (status == 1) return stem_2_illness;
+                else if (status == 2) return stem_2_died;
             }
             else if (stage == 3)
             {
                 if (status == 0) return stem_3_default;
-                else if (status == 3) return stem_3_illness;
-                else if (status == 4) return stem_3_died;
+                else if (status == 1) return stem_3_illness;
+                else if (status == 2) return stem_3_died;
             }
             else if (stage == 4)
             {
@@ -66,14 +66,14 @@ public class PlantObjectProperty : MonoBehaviour
             else if (stage == 2)
             {
                 if (status == 0) return root_2_default;
-                else if (status == 3) return root_2_illness;
-                else if (status == 4) return root_2_died;
+                else if (status == 1) return root_2_illness;
+                else if (status == 2) return root_2_died;
             }
             else if (stage == 3)
             {
                 if (status == 0) return root_3_default;
-                else if (status == 3) return root_3_illness;
-                else if (status == 4) return root_3_died;
+                else if (status == 1) return root_3_illness;
+                else if (status == 2) return root_3_died;
             }
             else if (stage == 4) {
                 return root_4_default;
