@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 6432426417045391597}
   - component: {fileID: 4310472086460988402}
   m_Layer: 0
-  m_Name: Rosa
+  m_Name: RedTail_
   m_TagString: Stem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,8 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlantSpritesList:
-  - {fileID: 5265350901443548299, guid: 60b0923d67cec438bb04796647491239, type: 3}
-  - {fileID: 5265350901443548299, guid: b59cf9649e01c49db92745287ad2f792, type: 3}
+  - {fileID: 5265350901443548299, guid: 1b2f4b96e2fd14b85b2b874355d14ac6, type: 3}
   PlantType: 0
   TimeRemainToNextStage: -1
   PlantStage: 0

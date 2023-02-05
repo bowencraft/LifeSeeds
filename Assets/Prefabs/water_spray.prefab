@@ -102,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.21284282, y: -0.80313635}
+  m_Offset: {x: 0.17680287, y: -1.037392}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.4217901, y: 0.62493896}
@@ -113,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.069323, y: 3.927575}
+  m_Size: {x: 1.9972434, y: 3.4590638}
   m_EdgeRadius: 0
 --- !u!50 &8736881808408109480
 Rigidbody2D:
@@ -152,7 +152,7 @@ MonoBehaviour:
   cameraPos: {x: 0, y: 0, z: 0}
   ToolType: 
   PlantTag: Stem
-  iteminhand: {fileID: 0}
+  iteminhand: {fileID: 8736881808408109481}
   mouseVisualTransform: {fileID: 8736881808408109485}
 --- !u!114 &8736881808408109459
 MonoBehaviour:

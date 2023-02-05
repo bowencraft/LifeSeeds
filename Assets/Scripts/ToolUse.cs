@@ -36,7 +36,7 @@ public class ToolUse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Rigidbody2D>().gravityScale = 0;
+        iteminhand.GetComponent<Rigidbody2D>().gravityScale = 0;
 
         if (Input.GetMouseButtonUp(1))
         {
@@ -60,9 +60,9 @@ public class ToolUse : MonoBehaviour
         {
 
             isDragging = false;
-            this.GetComponent<Rigidbody2D>().gravityScale = 1;
+            iteminhand.GetComponent<Rigidbody2D>().gravityScale = 1;
 
-            var rb = this.GetComponent<Rigidbody2D>();
+            var rb = iteminhand.GetComponent<Rigidbody2D>();
             rb.constraints = RigidbodyConstraints2D.None;
             //Cursor.lockState = CursorLockMode.None;
             //Cursor.visible = true;
@@ -156,17 +156,5 @@ public class ToolUse : MonoBehaviour
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0f;
         return mouseWorldPosition;
-    }
-
-    public bool Dragging()
-    {
-        if (isDragging)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
     }
 }
