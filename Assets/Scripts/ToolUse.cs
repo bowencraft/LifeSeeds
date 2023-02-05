@@ -110,6 +110,11 @@ public class ToolUse : MonoBehaviour
                         if (plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Contains("killBug"))
                         plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Remove("killBug");
                     }
+                    else if (ToolType.Equals("scissor"))
+                    {
+                        Debug.Log("Remove plants!");
+                        Destroy(plantHolder);
+                    }
                 }
             //else if (other.gameObject.name.Equals(Collider2.name))
             //    {

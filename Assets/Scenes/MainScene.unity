@@ -2324,6 +2324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: scissor
       objectReference: {fileID: 0}
+    - target: {fileID: 5611966177292311765, guid: 8b69b84c25c634da99d4e9e702afbcd5, type: 3}
+      propertyPath: ToolType
+      value: scissor
+      objectReference: {fileID: 0}
     - target: {fileID: 8299971842927211097, guid: 8b69b84c25c634da99d4e9e702afbcd5, type: 3}
       propertyPath: m_RootOrder
       value: 20
