@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class MouseBinding : MonoBehaviour
 {
+    public GameObject toolInventery = null;
 
     public Camera MainCamera;
     //[SerializeField] private Transform mouseVisualTransform;
@@ -23,12 +25,25 @@ public class MouseBinding : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Stem")
+        if (other.gameObject.name == "pot_uplayer")
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Debug.Log("Stray pooh!");
-            }
+            Color color = other.gameObject.GetComponent<SpriteRenderer>().color;
+
+            color.a = 0.5f;
+
+            other.gameObject.GetComponent<SpriteRenderer>().color = color;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "pot_uplayer")
+        {
+            Color color = other.gameObject.GetComponent<SpriteRenderer>().color;
+
+            color.a = 1f;
+
+            other.gameObject.GetComponent<SpriteRenderer>().color = color;
         }
     }
 
