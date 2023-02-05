@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class ToolUse : MonoBehaviour
 {
     Vector3 offset;
-    bool isDragging;
+    public static bool isDragging;
     public Vector3 cameraPos;
+
+    Animator animator;
 
 
     private Camera mainCamera;
@@ -16,6 +19,7 @@ public class ToolUse : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,6 +55,15 @@ public class ToolUse : MonoBehaviour
         }
 
         cameraPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (isDragging && Input.GetMouseButton(0))
+        {
+            animator.SetBool("penshui", true);
+        }
+        else
+        {
+            animator.SetBool("penshui", false);
+        }
     }
 
     
@@ -72,4 +85,15 @@ public class ToolUse : MonoBehaviour
         return mouseWorldPosition;
     }
 
+    public bool Dragging()
+    {
+        if (isDragging)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

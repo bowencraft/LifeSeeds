@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class pot : MonoBehaviour
 {
 
     public void OnLoginButtonClick()
     {
-        SceneManager.LoadScene("PotScene");
+        if (ToolUse.isDragging)
+        {
+            Debug.Log("Yes");
+        }
+        else
+        {
+            SceneManager.LoadScene("PotScene");
+        }
     }
 }
