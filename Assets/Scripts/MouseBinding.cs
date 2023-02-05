@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.U2D;
+using Color = UnityEngine.Color;
 
 public class MouseBinding : MonoBehaviour
 {
     public GameObject toolInventery = null;
 
     public Camera MainCamera;
+
+    //float preferAlpha = 1f;
     //[SerializeField] private Transform mouseVisualTransform;
 
     // Start is called before the first frame update
@@ -25,11 +29,11 @@ public class MouseBinding : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "pot_uplayer")
+        if (other.gameObject.name == "pot_uplayer" && toolInventery == null)
         {
             Color color = other.gameObject.GetComponent<SpriteRenderer>().color;
-
             color.a = 0.5f;
+            //color.a = Mathf.Lerp(color.a,0.5f,0.1f);
 
             other.gameObject.GetComponent<SpriteRenderer>().color = color;
         }
@@ -42,6 +46,7 @@ public class MouseBinding : MonoBehaviour
             Color color = other.gameObject.GetComponent<SpriteRenderer>().color;
 
             color.a = 1f;
+            //color.a = Mathf.Lerp(color.a, 1f, 0.1f);
 
             other.gameObject.GetComponent<SpriteRenderer>().color = color;
         }

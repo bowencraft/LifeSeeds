@@ -2,12 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class ToolUse : MonoBehaviour
 {
     Vector3 offset;
     public static bool isDragging;
     public Vector3 cameraPos;
+
+    public string ToolType;
+    public GameObject PlantHolder1;
+    public GameObject PlantHolder2;
+    public GameObject Collider1;
+    public GameObject Collider2;
 
     Animator animator;
 
@@ -40,16 +47,19 @@ public class ToolUse : MonoBehaviour
             {
                 //Debug.Log("Stray pooh!");
             }
-            mouseVisualTransform.position = GetMouseWorldPosition();
-            //transform.position = Camera.main.ScreenToViewportPoint(Input.mousePosition) * mouseRatio;
-            //Cursor.lockState = CursorLockMode.Confined;
-            //Cursor.visible = false;
+                mouseVisualTransform.position = GetMouseWorldPosition();
+                //transform.position = Camera.main.ScreenToViewportPoint(Input.mousePosition) * mouseRatio;
+                //Cursor.lockState = CursorLockMode.Confined;
+                //Cursor.visible = false;
         }
         else
         {
 
             isDragging = false;
             this.GetComponent<Rigidbody2D>().gravityScale = 1;
+
+            var rb = this.GetComponent<Rigidbody2D>();
+            rb.constraints = RigidbodyConstraints2D.None;
             //Cursor.lockState = CursorLockMode.None;
             //Cursor.visible = true;
         }
@@ -69,13 +79,54 @@ public class ToolUse : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Stem")
-        {
+        
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Stray pooh!");
+
+                if (other.gameObject.name.Equals(Collider1.name))
+                {
+                    //Debug.Log("Spraying!");
+                    if (ToolType.Equals("illness"))
+                    {
+                        //Debug.Log("Find illness!");
+                        if (PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Contains("illness"))
+                            PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Remove("illness");
+                    
+                    } else if (ToolType.Equals("lackWater"))
+                    {
+                        Debug.Log("Find lackWater!");
+                        if (PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Contains("lackWater"))
+                            PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Remove("lackWater");
+                    
+                    }
+                    else if (ToolType.Equals("killBug"))
+                    {
+                        Debug.Log("Find bug!");
+                        if (PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Contains("killBug"))
+                            PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Remove("killBug");
+                    }
+                } else if (other.gameObject.name.Equals(Collider2.name))
+                {
+                    if (ToolType.Equals("illness"))
+                    {
+                        if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("illness"))
+                            PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("illness");
+
+                    }
+                    else if (ToolType.Equals("lackWater"))
+                    {
+                        if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("lackWater"))
+                            PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("lackWater");
+
+                    }
+                    else if (ToolType.Equals("killBug"))
+                    {
+                        if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("killBug"))
+                            PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("killBug");
+                    }
+                }
             }
-        }
+        
     }
 
 
@@ -83,6 +134,10 @@ public class ToolUse : MonoBehaviour
     {
         isDragging = true;
         this.GetComponent<Rigidbody2D>().gravityScale = 0;
+
+        var rb = this.GetComponent<Rigidbody2D>();
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
         mouseVisualTransform.position = GetMouseWorldPosition();
         //Vector3 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition) * mouseRatio;
         //mousepos.z = 0;

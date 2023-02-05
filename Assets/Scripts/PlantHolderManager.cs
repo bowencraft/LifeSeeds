@@ -18,11 +18,23 @@ public class PlantHolderManager : MonoBehaviour
     public int PreferStage = 0;
     public int PreferStatus = 0;
 
+    public ArrayList PlantIlls = new ArrayList();
+    public string[] PlantStrings;
+    //public GameObject PlantStatusHolder;
+
+
+    public GameObject StatusHolder_lackWater;
+    public GameObject StatusHolder_killBug;
+    public GameObject StatusHolder_wildGrass;
+
+
     PlantObjectProperty plantProperty = null;
     SpriteRenderer stem_SpriteRenderer;
     SpriteRenderer root_SpriteRenderer;
 
     public GameObject rootHolder;
+
+    public int rNumber = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +49,7 @@ public class PlantHolderManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlantStrings = (string[])PlantIlls.ToArray(typeof(string));
         if (PlantType != -1 && PlantStatus != 4)
         {
             //if (PlantStatus == 0)
@@ -45,6 +58,48 @@ public class PlantHolderManager : MonoBehaviour
             {
                 //Debug.Log(TimeRemainToNextStage);
                 TimeRemainToNextStage--;
+                if (PlantStage >1 && PlantStage <4 && rNumber == 0) {
+
+                    rNumber = (int) (1 / Time.deltaTime);
+
+                    int ranNum = Random.Range(0, 100);
+                    //Debug.Log(ranNum);
+                    if (ranNum < 5)
+                    {
+
+                        if (!PlantIlls.Contains("illness"))
+                        {
+                            PlantIlls.Add("illness");
+                            healthStatus = false;
+                            StatusHolder_wildGrass.SetActive(true);
+                        }
+                    }
+                    if (ranNum >30 && ranNum < 33)
+                    {
+
+                        if (!PlantIlls.Contains("lackWater"))
+                        {
+                            PlantIlls.Add("lackWater");
+                            healthStatus = false;
+                            StatusHolder_lackWater.SetActive(true);
+                        }
+                    }
+                    if (ranNum > 10 && ranNum < 13)
+                    {
+
+                        if (!PlantIlls.Contains("killBug"))
+                        {
+                            PlantIlls.Add("killBug");
+                            healthStatus = false;
+                            StatusHolder_killBug.SetActive(true);
+                        }
+                    }
+                }
+                if (rNumber > 0)
+                {
+                    rNumber--;
+                }
+
                 UpdateNextStage();
             }
             else if (TimeRemainToNextStage == 0) // next stage
@@ -58,6 +113,11 @@ public class PlantHolderManager : MonoBehaviour
 
                     stem_SpriteRenderer.sprite = plantProperty.getSprite(0, PlantStage, PlantStatus);
                     root_SpriteRenderer.sprite = plantProperty.getSprite(1, PlantStage, PlantStatus);
+
+                    if (PlantStatus == 4) {
+                        PlantIlls.Clear();
+                        
+                    }
                 }
                 if (PlantStage == 4) {
 
@@ -75,7 +135,33 @@ public class PlantHolderManager : MonoBehaviour
 
             //}
             //GetComponent<SpriteRenderer>() = p_SpriteRenderer;
+            if (PlantIlls.Contains("killBug"))
+            {
 
+                StatusHolder_killBug.SetActive(true);
+            }
+            else {
+
+                StatusHolder_killBug.SetActive(false);
+            }
+            if (PlantIlls.Contains("illness"))
+            {
+
+                StatusHolder_wildGrass.SetActive(true);
+            }
+            else
+            {
+
+                StatusHolder_wildGrass.SetActive(false);
+            }
+            if (PlantIlls.Contains("lackWater"))
+            {
+                StatusHolder_lackWater.SetActive(true);
+            }
+            else
+            {
+                StatusHolder_lackWater.SetActive(false);
+            }
         }
     }
 
@@ -90,6 +176,10 @@ public class PlantHolderManager : MonoBehaviour
     }
 
     public void UpdateNextStage() {
+        if (PlantIlls.Count == 0) {
+            healthStatus = true;
+        }
+
         switch (healthStatus) {
 
             case true:
