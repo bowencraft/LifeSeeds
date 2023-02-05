@@ -11,10 +11,11 @@ public class ToolUse : MonoBehaviour
     public Vector3 cameraPos;
 
     public string ToolType;
-    public GameObject PlantHolder1;
-    public GameObject PlantHolder2;
-    public GameObject Collider1;
-    public GameObject Collider2;
+    public string PlantTag = "Stem";
+    //public GameObject PlantHolder1;
+    //public GameObject PlantHolder2;
+    //public GameObject Collider1;
+    //public GameObject Collider2;
 
     Animator animator;
 
@@ -83,48 +84,50 @@ public class ToolUse : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
 
-                if (other.gameObject.name.Equals(Collider1.name))
+                if (other.gameObject.tag.Equals(PlantTag))
                 {
+                    GameObject plantHolder = other.gameObject;
                     //Debug.Log("Spraying!");
                     if (ToolType.Equals("illness"))
                     {
                         //Debug.Log("Find illness!");
-                        if (PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Contains("illness"))
-                            PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Remove("illness");
+                        if (plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Contains("illness"))
+                        plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Remove("illness");
                     
                     } else if (ToolType.Equals("lackWater"))
                     {
                         Debug.Log("Find lackWater!");
-                        if (PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Contains("lackWater"))
-                            PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Remove("lackWater");
+                        if (plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Contains("lackWater"))
+                        plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Remove("lackWater");
                     
                     }
                     else if (ToolType.Equals("killBug"))
                     {
                         Debug.Log("Find bug!");
-                        if (PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Contains("killBug"))
-                            PlantHolder1.GetComponent<PlantHolderManager>().PlantIlls.Remove("killBug");
-                    }
-                } else if (other.gameObject.name.Equals(Collider2.name))
-                {
-                    if (ToolType.Equals("illness"))
-                    {
-                        if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("illness"))
-                            PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("illness");
-
-                    }
-                    else if (ToolType.Equals("lackWater"))
-                    {
-                        if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("lackWater"))
-                            PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("lackWater");
-
-                    }
-                    else if (ToolType.Equals("killBug"))
-                    {
-                        if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("killBug"))
-                            PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("killBug");
+                        if (plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Contains("killBug"))
+                        plantHolder.GetComponent<PlantHolderManager>().PlantIlls.Remove("killBug");
                     }
                 }
+            //else if (other.gameObject.name.Equals(Collider2.name))
+            //    {
+            //        if (ToolType.Equals("illness"))
+            //        {
+            //            if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("illness"))
+            //                PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("illness");
+
+            //        }
+            //        else if (ToolType.Equals("lackWater"))
+            //        {
+            //            if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("lackWater"))
+            //                PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("lackWater");
+
+            //        }
+            //        else if (ToolType.Equals("killBug"))
+            //        {
+            //            if (PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Contains("killBug"))
+            //                PlantHolder2.GetComponent<PlantHolderManager>().PlantIlls.Remove("killBug");
+            //        }
+            //    }
             }
         
     }

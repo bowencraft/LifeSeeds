@@ -18,7 +18,8 @@ public class SpawnOnClick2D : MonoBehaviour
             {
                 if (collider == spawnPoint.GetComponent<Collider2D>())
                 {
-                    Instantiate(prefab, spawnPoint.transform.position, Quaternion.identity);
+                    GameObject plantsfeb = Instantiate(prefab, spawnPoint.transform.position, Quaternion.identity);
+                    
                     break;
                 }
             }
