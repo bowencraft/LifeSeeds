@@ -7,7 +7,7 @@ using static UnityEditor.Progress;
 public class ToolUse : MonoBehaviour
 {
     Vector3 offset;
-    public static bool isDragging;
+    public bool isDragging;
     public Vector3 cameraPos;
 
     public string ToolType;
@@ -16,6 +16,8 @@ public class ToolUse : MonoBehaviour
     //public GameObject PlantHolder2;
     //public GameObject Collider1;
     //public GameObject Collider2;
+
+    public GameObject iteminhand;
 
     Animator animator;
 
@@ -135,10 +137,11 @@ public class ToolUse : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("Click" + gameObject.name);
         isDragging = true;
-        this.GetComponent<Rigidbody2D>().gravityScale = 0;
+        iteminhand.GetComponent<Rigidbody2D>().gravityScale = 0;
 
-        var rb = this.GetComponent<Rigidbody2D>();
+        var rb = iteminhand.GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         mouseVisualTransform.position = GetMouseWorldPosition();
