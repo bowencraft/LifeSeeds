@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PotScene.unity
     guid: 8731ceafd209b4c59bd758782711c303
+  - enabled: 1
+    path: Assets/Scenes/RootGameScene.unity
+    guid: 1990349d89262484685766e343aef667
   m_configObjects: {}

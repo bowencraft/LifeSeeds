@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class RootGamePlayerMovement : MonoBehaviour
 {
@@ -77,7 +78,7 @@ public class RootGamePlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.name == "GoalTrigger1")
         {
-            Debug.Log("Hit goal");
+            SceneManager.LoadScene("MainScene");
         }
     }
 }
