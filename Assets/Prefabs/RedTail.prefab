@@ -60,5 +60,5 @@ MonoBehaviour:
   stem_3_died: {fileID: -148069866, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   root_2_died: {fileID: -589311246, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   root_3_died: {fileID: 87776935, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
-  StageTime: 6000
+  StageTime: 600
   PlantName: RedTail

@@ -60,5 +60,5 @@ MonoBehaviour:
   stem_3_died: {fileID: -580059312, guid: a9dfbdd253a07437bba68912ae5742c8, type: 3}
   root_2_died: {fileID: -1818074861, guid: a9dfbdd253a07437bba68912ae5742c8, type: 3}
   root_3_died: {fileID: 517756145, guid: a9dfbdd253a07437bba68912ae5742c8, type: 3}
-  StageTime: 6000
+  StageTime: 600
   PlantName: Lightning

@@ -60,5 +60,5 @@ MonoBehaviour:
   stem_3_died: {fileID: -1409200549, guid: fdae49a8dc1fb4dc89e4f93302f9305a, type: 3}
   root_2_died: {fileID: 949516076, guid: fdae49a8dc1fb4dc89e4f93302f9305a, type: 3}
   root_3_died: {fileID: -927330508, guid: fdae49a8dc1fb4dc89e4f93302f9305a, type: 3}
-  StageTime: 6000
+  StageTime: 600
   PlantName: Rosea

@@ -60,5 +60,5 @@ MonoBehaviour:
   stem_3_died: {fileID: -281855405, guid: 6b228a1f30f6d491fb7ee294dd6810fc, type: 3}
   root_2_died: {fileID: -755397837, guid: 6b228a1f30f6d491fb7ee294dd6810fc, type: 3}
   root_3_died: {fileID: -1959986418, guid: 6b228a1f30f6d491fb7ee294dd6810fc, type: 3}
-  StageTime: 6000
+  StageTime: 600
   PlantName: Rose
