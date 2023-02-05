@@ -193,7 +193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6432426415250597212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 0.19, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -241,7 +241,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1630849756, guid: fdae49a8dc1fb4dc89e4f93302f9305a, type: 3}
+  m_Sprite: {fileID: 1319099324, guid: 6b228a1f30f6d491fb7ee294dd6810fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -304,6 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlantSpritesList:
   - {fileID: 5265350901443548299, guid: 60b0923d67cec438bb04796647491239, type: 3}
+  - {fileID: 5265350901443548299, guid: b59cf9649e01c49db92745287ad2f792, type: 3}
   PlantType: 0
   TimeRemainToNextStage: -1
   PlantStage: 0
@@ -358,7 +359,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -434499555, guid: fdae49a8dc1fb4dc89e4f93302f9305a, type: 3}
+  m_Sprite: {fileID: -1641920970, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -385,8 +386,8 @@ BoxCollider2D:
   m_Offset: {x: -0.04901147, y: 3.3392377}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 3.2512739, y: 4.62}
+    pivot: {x: 0.53233844, y: -0.0037690708}
+    oldSize: {x: 2.7499998, y: 5.091278}
     newSize: {x: 38.348354, y: 73.33333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
