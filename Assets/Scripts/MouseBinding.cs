@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class MouseBinding : MonoBehaviour
 {
@@ -21,16 +22,8 @@ public class MouseBinding : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Stem")
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Debug.Log("Stray pooh!");
-            }
-        }
-    }
+    
+
 
     private Vector3 GetMouseWorldPosition()
     {

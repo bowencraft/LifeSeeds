@@ -26,7 +26,7 @@ public class ToolUse : MonoBehaviour
         if (Input.GetMouseButtonUp(1))
         {
             isDragging = false;
-            mouseVisualTransform.position = GetMouseWorldPosition();
+            //mouseVisualTransform.position = GetMouseWorldPosition();
         }
 
 
@@ -53,7 +53,18 @@ public class ToolUse : MonoBehaviour
         cameraPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
-    
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Stem")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("Stray pooh!");
+            }
+        }
+    }
+
 
     private void OnMouseDown()
     {
