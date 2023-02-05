@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d41ff183e5d4b4591bdfd41650cf72, type: 3}
   m_Name: Budget
   m_EditorClassIdentifier: 
-  nameString: 
-  sprite: {fileID: 0}
+  nameString: Budget
+  sprite: {fileID: 1952651995, guid: bfcb8fc4ecf6b4e688a292dd09bada0a, type: 3}
