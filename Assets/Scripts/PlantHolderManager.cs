@@ -42,7 +42,7 @@ public class PlantHolderManager : MonoBehaviour
         stem_SpriteRenderer = this.GetComponent<SpriteRenderer>();
         root_SpriteRenderer = rootHolder.GetComponent<SpriteRenderer>();
 
-        addNewPlant(0);
+        addNewPlant(PlantType);
 
     }
 
