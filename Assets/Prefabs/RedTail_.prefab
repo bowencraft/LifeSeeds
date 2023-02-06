@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 6432426417045391598}
   - component: {fileID: 6432426417045391597}
   - component: {fileID: 4310472086460988402}
+  - component: {fileID: 6913904577433454496}
   m_Layer: 0
   m_Name: RedTail_
   m_TagString: Stem
@@ -303,10 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlantSpritesList:
-  - {fileID: 5265350901443548299, guid: 60b0923d67cec438bb04796647491239, type: 3}
-  - {fileID: 5265350901443548299, guid: 0f794da0571634d2ba17e2ce0f1dc76b, type: 3}
   - {fileID: 5265350901443548299, guid: 1b2f4b96e2fd14b85b2b874355d14ac6, type: 3}
-  - {fileID: 5265350901443548299, guid: b59cf9649e01c49db92745287ad2f792, type: 3}
   PlantType: 0
   TimeRemainToNextStage: -1
   PlantStage: 0
@@ -398,6 +396,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7216125, y: 6.417081}
   m_EdgeRadius: 0
+--- !u!114 &6913904577433454496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6432426417045391592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaaa1b4ae97d8fa4eb59e1afddd759ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7568627357174308917
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class ToolUse : MonoBehaviour
     //public GameObject Collider1;
     //public GameObject Collider2;
 
+    public static int ifDestroy = 0;
 
     public GameObject iteminhand;
 
@@ -112,6 +113,7 @@ public class ToolUse : MonoBehaviour
                     else if (ToolType.Equals("scissor"))
                     {
                         Debug.Log("Remove plants!");
+                    ifDestroy = 1;
                         Destroy(plantHolder);
                     }
                 }
@@ -139,6 +141,7 @@ public class ToolUse : MonoBehaviour
         
     }
 
+    
 
     private void OnMouseDown()
     {

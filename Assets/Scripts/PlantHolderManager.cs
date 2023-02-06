@@ -9,7 +9,7 @@ public class PlantHolderManager : MonoBehaviour
 
     public int PlantType = -1; // Plant sprites are decided by type, status and stage
 
-    public int TimeRemainToNextStage = 0;
+    public float TimeRemainToNextStage = 0f;
 
     public int PlantStage = 0; // 0 = seed, 1 - 3 = stage, 4 = mature
     public int PlantStatus = 0; // 0 - growing, 1 - stop growing (event happens), 2 - mature, 3 - illness, 4 - die
@@ -49,6 +49,8 @@ public class PlantHolderManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("sw£º " + TimeRemainToNextStage);
+        TimeRemainToNextStage -= Time.deltaTime;
         PlantStrings = (string[])PlantIlls.ToArray(typeof(string));
         if (PlantType != -1 && PlantStatus != 4)
         {
@@ -57,7 +59,6 @@ public class PlantHolderManager : MonoBehaviour
             if (TimeRemainToNextStage > 0) // time minus
             {
                 //Debug.Log(TimeRemainToNextStage);
-                TimeRemainToNextStage--;
                 if (PlantStage >1 && PlantStage <4 && rNumber == 0) {
 
                     rNumber = (int) (1 / Time.deltaTime);
@@ -102,7 +103,7 @@ public class PlantHolderManager : MonoBehaviour
 
                 UpdateNextStage();
             }
-            else if (TimeRemainToNextStage == 0) // next stage
+            else if (TimeRemainToNextStage <= 0 && -1 < TimeRemainToNextStage) // next stage
             {
                 if (PlantStage < 4)
                 {

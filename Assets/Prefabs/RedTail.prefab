@@ -47,7 +47,7 @@ MonoBehaviour:
   stem_2_default: {fileID: 742061613, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   stem_3_default: {fileID: 64926508, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   stem_4_default: {fileID: -1641920970, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
-  root_0_default: {fileID: -1533879656, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
+  root_0_default: {fileID: 815840214, guid: ba2def8c7c4b14886852c68bce85a729, type: 3}
   root_1_default: {fileID: 793209016, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   root_2_default: {fileID: -457362516, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   root_3_default: {fileID: -1345196908, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
@@ -60,5 +60,5 @@ MonoBehaviour:
   stem_3_died: {fileID: -148069866, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   root_2_died: {fileID: -589311246, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
   root_3_died: {fileID: 87776935, guid: c214648e6ecf94024a35cdfb1c9c9fb9, type: 3}
-  StageTime: 600
+  StageTime: 12
   PlantName: RedTail

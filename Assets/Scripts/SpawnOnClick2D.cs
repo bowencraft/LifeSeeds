@@ -1,13 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnOnClick2D : MonoBehaviour
 {
-    public GameObject[] spawnPoints;
     public GameObject[] prefabs;
-    public static int selectedPrefabIndex;
+    public static int selectedPrefabIndex = 10;
+    public Collider2D[] colliders;
+    public Button[] buttons;
+
+    int colliderIndext;
+
+    private void Start()
+    {
+        for (int i = 0; i < prefabs.Length; i++)
+        {
+            int index = i;
+            buttons[i].onClick.AddListener(() => SelectPrefab(index));
+        }
+    }
+
+    private void SelectPrefab(int index)
+    {
+        selectedPrefabIndex = index;
+    }
 
     private void Update()
     {
@@ -15,16 +34,37 @@ public class SpawnOnClick2D : MonoBehaviour
         {
             Debug.Log("Index: " + selectedPrefabIndex);
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Collider2D collider = Physics2D.OverlapPoint(mousePosition);
-
-            foreach (GameObject spawnPoint in spawnPoints)
+            for (int i = 0; i < colliders.Length; i++)
             {
-                if (collider == spawnPoint.GetComponent<Collider2D>())
+                colliderIndext = -1;
+                if (colliders[i].OverlapPoint(mousePosition))
                 {
-                    Instantiate(prefabs[selectedPrefabIndex], spawnPoint.transform.position, Quaternion.identity);
-                    break;
+                    Instantiate(prefabs[selectedPrefabIndex], mousePosition, Quaternion.identity);
+                    //colliderIndext = i;
+                    IfSpawn(colliders[i]);
                 }
             }
         }
+        if (Input.GetMouseButtonDown(1))
+        {
+            selectedPrefabIndex = 10;
+        }
+    }
+
+    public void IfSpawn(Collider2D collider)
+    {
+        List<Collider2D> colliderList = colliders.ToList();
+        if (colliderIndext != -1)
+        {
+            colliderList.Remove(collider);
+        }
+        colliders = colliderList.ToArray();
+    }
+
+    public void IfUnspawn(Collider2D collider)
+    {
+        List<Collider2D> colliderList = colliders.ToList();
+        colliderList.Add(collider);
+        colliders = colliderList.ToArray();
     }
 }

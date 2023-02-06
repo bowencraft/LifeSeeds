@@ -16,6 +16,14 @@ public class SeedUse : MonoBehaviour
     private Camera mainCamera;
     [SerializeField] private Transform mouseVisualTransform;
 
+    List<string> seednames = new List<string>()
+{
+    "闪电果seed",
+    "Roseseed",
+    "gouqiseed",
+    "roseaseed"
+};
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +48,7 @@ public class SeedUse : MonoBehaviour
         {
 
             isPlanting = false;
-            iteminhand.GetComponent<Rigidbody2D>().gravityScale = 1;
+            //iteminhand.GetComponent<Rigidbody2D>().gravityScale = 1;
 
             var rb = this.GetComponent<Rigidbody2D>();
             rb.constraints = RigidbodyConstraints2D.None;
@@ -77,6 +85,10 @@ public class SeedUse : MonoBehaviour
         else if (gameObject.name == "roseaseed")
         {
             SpawnOnClick2D.selectedPrefabIndex = 0;
+        }
+        else if (!seednames.Contains(gameObject.name))
+        {
+            SpawnOnClick2D.selectedPrefabIndex = 10;
         }
     }
 
